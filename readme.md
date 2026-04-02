@@ -41,6 +41,7 @@
 
     - The **model.py** file contains the **Model** parent class and associated functions for creating and evaluating survival models.
     - Specific survival model wrapper classes are in **accelerated_failure_time.py**, **cox_elastic_net.py**, and **random_survival_forest.py**.
+    - The **partitioned_model.py** file contains the **PartitionedModel** class, which can be used to evaluate the difference between partitioned and unpartitioned models.
 
     #### metrics package
 
