@@ -8,10 +8,10 @@
 - _The version of **elsa.py** in this repository has been stripped of ELSA metadata._
 
 ### umberto package
-- The umberto package holds the data and datasets.
+- [ ] The umberto package holds the data and datasets.
 
     #### library folder
-    - Once permission is obtained, the ELSA raw data files can be stored in one of the the **umberto.library.ELSA** folders (e.g., tab for *.tab files).
+    - Once permission is obtained, the ELSA raw data files can be stored in one of the the **umberto.library.ELSA** folders (e.g., the **tab** folder for *.tab files).
     - The freely available Veteran dataset is available in the **survset** folder.
 
     #### datasets package
@@ -19,10 +19,14 @@
     - Running **ELSA.build()** will build and store the ELSA dataset from the raw files.
 
 ### sapient package
-- The sapient package contains the plotting, segmentation and modelling code.
+- [ ] The sapient package contains the plotting, segmentation, and modelling code.
 
     #### plots package
-    - The Veteran dataset can be used to test the **KaplanMeier** class plot in the **sapient** package.
+
+    - The **plots.py** file contains the **Plots** parent class and associated functions for plotting survival analysis curves.
+    - The **KaplanMeier** class is used to plot Kaplan-Meier curves.
+    - The **Brier** class is used to plot Brier score curves.
+    - The Veteran dataset can be used to test the Kaplan-Meier curve plotting.
 
     #### segment package
 
@@ -30,7 +34,7 @@
 
     #### models package
 
-    - The **models.py** file contains the **Model** parent class and associated functions for creating and evaluating survival models.
+    - The **model.py** file contains the **Model** parent class and associated functions for creating and evaluating survival models.
     - Specific survival model wrapper classes are in **accelerated_failure_time.py**, **cox_elastic_net.py**, and **random_survival_forest.py**.
 
     #### metrics package
