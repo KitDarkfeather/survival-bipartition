@@ -6,6 +6,7 @@
 - _In order to run the partitioning and modelling code, you will need access to the ELSA dataset.  Please contact the first author for instructions for gaining access or with any questions._  
 - _Once ELSA data access is granted, the full **elsa.py** file will be provided._
 - _The version of **elsa.py** in this repository has been stripped of ELSA metadata._
+- _To execute code, either modify the code at the end of the class files or write a separate script along the lines of **sapient.plots.demo.km curve for Veterans.py**._
 
 ### umberto package
 - [ ] Holds the data and datasets.
