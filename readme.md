@@ -8,7 +8,7 @@
 - _The version of **elsa.py** in this repository has been stripped of ELSA metadata._
 
 ### umberto package
-- [ ] The umberto package holds the data and datasets.
+- [ ] Holds the data and datasets.
 
     #### library folder
     - Once permission is obtained, the ELSA raw data files can be stored in one of the the **umberto.library.ELSA** folders (e.g., the **tab** folder for *.tab files).
@@ -19,15 +19,20 @@
     - Running **ELSA.build()** will build and store the ELSA dataset from the raw files.
 
 ### sapient package
-- [ ] The sapient package contains the plotting, segmentation, and modelling code.
+- [ ] Contains the plotting, segmentation, and modelling code.
 
     #### plots package
 
     - The **plots.py** file contains the **Plots** parent class and associated functions for plotting survival analysis curves.
     - The **KaplanMeier** class is used to plot Kaplan-Meier curves.
     - The **Brier** class is used to plot Brier score curves.
-    - The Veteran dataset can be used to test the Kaplan-Meier curve plotting.
-
+    - The Veteran dataset can be used to test the Kaplan-Meier curve plotting:
+    ```python
+  from sapient.plots.kaplan_meier import KaplanMeier
+      
+  KaplanMeier('veteran').plot('kaplan-meier', 'days', size=22, width=5)
+    ```
+  
     #### segment package
 
     - The **segment.py** file contains the **Segment** class and associated functions for creating and evaluating bipartitions. 
