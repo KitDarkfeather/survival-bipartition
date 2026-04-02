@@ -1,0 +1,2 @@
+name,filename,features,instances,description
+Veterans' Administration Lung Cancer study,veteran,6,137,"A survival data set from the randomized trial of 2 treatment regimens for lung cancer.  The endpoint is death, which occurred for 128 patients (93.4%)."
